@@ -21,12 +21,18 @@
     <ClCompile Include="invalid_input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="grade_calculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="invalid_input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClassStudent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grade_calculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

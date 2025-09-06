@@ -18,7 +18,10 @@ int main()
 
 	std::cout << '\n';
 
-	kajar.setSubjectgrade(); // error: jeg tror det er fordi jeg forsøger at printe "pair<>". Må undersøge dette.
+	kajar.setSubjectgrade();
+
+
+
 	/*
 	* 1. How many subjects ?
 	* -> make a std::vector in that size.

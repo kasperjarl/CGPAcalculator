@@ -12,7 +12,6 @@ public:
 		: m_name{ setName() }, m_studentScores{ createVectorForSubjects() }
 	{
 	};
-	//~Student();
 
 	std::string setName()
 	{
@@ -66,31 +65,31 @@ public:
 		return m_name;
 	}
 
+
+	// CRITICAL: No input validation in this function !!! 
 	void setSubjectgrade()
 	{
-
-		std::cout << m_studentScores[0][0];
-		/*for (auto index : m_studentScores)
+				
+		for (uint64_t index{ 0 }; index < m_studentScores.size(); ++index)
 		{
-			std::cout << "Enter grade for " << index << ": ";
-		}*/
+			std::cout << "\nEnter grade for subject #" << index + 1<< ": ";
+			std::string grade{};
+			std::cin >> grade;
+			
+			std::cout << "\nEnter credit for subject #" << index + 1 << ": ";
+			double credit{};
+			std::cin >> credit;
+
+			m_studentScores[index].first = grade;
+			m_studentScores[index].second = credit;
+
+			std::cout << "\n---> grade: " << m_studentScores[index].first <<
+				" ---> credit: " << m_studentScores[index].second;
+		}
 	}
 
 private:
 	std::string m_name{ "No data" };
 	std::vector<std::pair<std::string, double>> m_studentScores{};
-	int m_id{0};
-	
-	
-	
-
+	int m_id{0}; // Sooooo.... I'm not doing anything with this right now 
 };
-
-//Student::Student() 
-//	: m_name {setName()}, m_studentScores{createVectorForSubjects()}
-//{
-//}
-//
-//Student::~Student()
-//{
-//}
