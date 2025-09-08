@@ -6,4 +6,4 @@
 #include "ClassStudent.h"
 
 
-double getGPA(std::vector<std::pair<std::string, double>> studentGradesAndCredits);
+void getGPA(std::vector<std::pair<std::string, double>> studentGradesAndCredits);

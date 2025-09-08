@@ -6,6 +6,8 @@
 #include "grade_calculator.h"
 
 
+// This seems to be a stupid way to do this...
+void getGPA(std::vector<std::pair<std::string, double>> studentGradesAndCredits);
 
 class Student
 {

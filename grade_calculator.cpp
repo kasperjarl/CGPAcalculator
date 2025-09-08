@@ -97,5 +97,5 @@ void getGPA(std::vector<std::pair<std::string, double>> studentGradesAndCredits)
 		denominator += studentGradesAndCredits[index].second;
 	}
 
-	std::cout << "Your GPA is: " numerator / denominator << "\nBye";
+	std::cout << "Your GPA is: " << numerator / denominator << "\nBye";
 }
